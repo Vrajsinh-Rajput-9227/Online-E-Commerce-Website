@@ -1,0 +1,260 @@
+/* Base Carousel Styles */
+.carousel-container {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-slide {
+  outline: none;
+  height: 500px;
+  display: flex !important;
+  align-items: center;
+  /* background: linear-gradient(135deg, #f5f7fa 0%, #e6f0ff 100%); */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Slide Content Layout */
+.slide-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+/* Text Content */
+.text-content {
+  flex: 1;
+  padding-right: 60px;
+  animation: fadeInLeft 0.8s ease-out;
+}
+
+.discount {
+  display: inline-block;
+  background: rgba(255, 71, 87, 0.1);
+  color: #ff4757;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  box-shadow: 0 2px 10px rgba(255, 71, 87, 0.2);
+}
+
+.title {
+  font-size: 3.2rem;
+  font-weight: 800;
+  color: #1e293b;
+  margin-bottom: 25px;
+  line-height: 1.2;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* Button Styles */
+.shop-now-btn {
+  background-color: #ff4757;
+  color: white;
+  border: none;
+  padding: 14px 35px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(255, 71, 87, 0.3);
+}
+
+.shop-now-btn:hover {
+  background-color: #ff2d40;
+  transform: translateY(-3px);
+  box-shadow: 0 7px 20px rgba(255, 71, 87, 0.4);
+}
+
+.shop-now-btn:active {
+  transform: translateY(1px);
+}
+
+/* Image Container */
+.image-content {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  padding: 40px 0;
+  animation: fadeInRight 0.8s ease-out;
+}
+
+.slide-image {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  position: relative;
+  z-index: 1;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.1));
+  transition: transform 0.5s ease;
+}
+
+/* Slick Navigation Arrows */
+.slick-prev,
+.slick-next {
+  width: 50px;
+  height: 50px;
+  z-index: 1;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.9) !important;
+  border-radius: 50%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.slick-prev { left: 25px; }
+.slick-next { right: 25px; }
+
+.slick-prev:before,
+.slick-next:before {
+  color: #2d3436 !important;
+  font-size: 24px !important;
+  opacity: 1 !important;
+  font-family: 'slick';
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  background: white !important;
+  transform: scale(1.1);
+}
+
+/* Dots Navigation */
+.slick-dots {
+  bottom: 30px !important;
+}
+
+.slick-dots li {
+  margin: 0 4px;
+}
+
+.slick-dots li button:before {
+  font-size: 10px !important;
+  color: rgba(45, 52, 54, 0.3) !important;
+  opacity: 1 !important;
+  transition: all 0.3s ease;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #ff4757 !important;
+  font-size: 12px !important;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .title {
+    font-size: 2.8rem;
+  }
+  
+  .slide-content {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  .carousel-slide {
+    height: auto;
+    padding: 60px 0;
+  }
+  
+  .slide-content {
+    padding: 0 20px;
+  }
+  
+  .text-content {
+    flex: 1;
+    padding-right: 30px;
+  }
+  
+  .image-content {
+    flex: 1;
+    padding: 40px 0;
+  }
+  
+  .image-content img {
+    max-width: 80%;
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+  }
+  
+  .discount {
+    font-size: 14px;
+    padding: 6px 15px;
+  }
+  
+  .shop-now-btn {
+    padding: 12px 28px;
+    font-size: 15px;
+  }
+  
+  .slick-prev,
+  .slick-next {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .slick-prev { left: 15px; }
+  .slick-next { right: 15px; }
+}
+
+/* Animations */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Add a subtle pattern overlay */
+.carousel-slide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23e6f0ff' fill-opacity='0.2'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  opacity: 0.1;
+  z-index: 1;
+}

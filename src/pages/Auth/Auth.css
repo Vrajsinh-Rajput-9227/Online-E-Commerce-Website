@@ -1,0 +1,118 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #f8f9fa;
+}
+
+/* Card styling */
+.shadow-sm {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08) !important;
+  border: none !important;
+  border-radius: 12px !important;
+  overflow: hidden;
+}
+
+/* Input group styling */
+.input-group-text {
+  border-right: none;
+  background-color: #f8f9fa;
+  border-color: #dee2e6;
+}
+
+.form-control {
+  border-left: none;
+  padding: 0.75rem 1rem;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #dee2e6;
+}
+
+/* Button styling */
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}
+
+/* Social buttons */
+.btn-outline-primary {
+  color: #0d6efd;
+  border-color: #dee2e6;
+}
+
+.btn-outline-danger {
+  color: #dc3545;
+  border-color: #dee2e6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+  .login-page {
+    padding: 1.5rem 0;
+  }
+  
+  .card {
+    border: none !important;
+    box-shadow: none !important;
+  }
+}
+
+/* Small button style */
+.btn-sm {
+  padding: 0.4rem 1rem;
+  font-size: 0.875rem;
+  border-radius: 6px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Example usage with primary color */
+.btn-sm.btn-primary {
+  background-color: #0d6efd;
+  border: 1px solid #0d6efd;
+  color: white;
+}
+
+.btn-sm.btn-primary:hover {
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}
+
+/* Example usage with outline variant */
+.btn-sm.btn-outline-primary {
+  color: #0d6efd;
+  background-color: transparent;
+  border: 1px solid #0d6efd;
+}
+
+.btn-sm.btn-outline-primary:hover {
+  color: #fff;
+  background-color: #0d6efd;
+}
+
+/* Make buttons full width on small screens */
+@media (max-width: 576px) {
+  .btn-sm {
+    width: 100%;
+    padding: 0.5rem;
+  }
+}

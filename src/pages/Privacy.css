@@ -1,0 +1,135 @@
+.privacy-page {
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  padding-bottom: 60px;
+}
+
+.privacy-header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 60px 0 40px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.privacy-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.privacy-header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.privacy-content {
+  padding: 0 15px;
+}
+
+.policy-section {
+  background: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+  margin-bottom: 40px;
+  line-height: 1.8;
+  color: #333;
+}
+
+.policy-section h2 {
+  color: #2c3e50;
+  font-size: 1.5rem;
+  margin: 35px 0 15px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #eee;
+  font-weight: 600;
+}
+
+.policy-section h2:first-child {
+  margin-top: 0;
+}
+
+.policy-section p {
+  margin-bottom: 20px;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.policy-section ul {
+  padding-left: 25px;
+  margin-bottom: 20px;
+}
+
+.policy-section li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.policy-section address {
+  font-style: normal;
+  margin: 20px 0;
+  line-height: 1.8;
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 5px;
+  border-left: 4px solid #3498db;
+}
+
+.last-updated {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+  color: #7f8c8d;
+  font-style: italic;
+  font-size: 0.95rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .privacy-header {
+    padding: 40px 0 30px;
+  }
+  
+  .privacy-header h1 {
+    font-size: 2rem;
+  }
+  
+  .policy-section {
+    padding: 25px 20px;
+  }
+  
+  .policy-section h2 {
+    font-size: 1.3rem;
+  }
+  
+  .privacy-content {
+    padding: 0 10px;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .privacy-page {
+    background: white;
+    padding: 0;
+  }
+  
+  .privacy-header {
+    background: white !important;
+    color: #333 !important;
+    padding: 20px 0 !important;
+    margin-bottom: 20px !important;
+    border-bottom: 2px solid #eee;
+  }
+  
+  .policy-section {
+    box-shadow: none !important;
+    border: 1px solid #eee;
+    page-break-inside: avoid;
+  }
+  
+  a {
+    text-decoration: none !important;
+  }
+}

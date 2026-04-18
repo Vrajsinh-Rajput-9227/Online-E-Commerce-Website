@@ -1,0 +1,146 @@
+.terms-page {
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  padding-bottom: 60px;
+}
+
+.terms-header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 60px 0 40px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.terms-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.terms-header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.terms-content {
+  padding: 0 15px;
+}
+
+.terms-section {
+  background: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+  margin-bottom: 40px;
+  line-height: 1.8;
+  color: #333;
+}
+
+.terms-section h2 {
+  color: #2c3e50;
+  font-size: 1.5rem;
+  margin: 35px 0 15px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #eee;
+  font-weight: 600;
+}
+
+.terms-section h2:first-child {
+  margin-top: 0;
+}
+
+.terms-section p {
+  margin-bottom: 20px;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.terms-section ul {
+  padding-left: 25px;
+  margin-bottom: 20px;
+}
+
+.terms-section li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.terms-section address {
+  font-style: normal;
+  margin: 20px 0;
+  line-height: 1.8;
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 5px;
+  border-left: 4px solid #3498db;
+}
+
+.terms-section a {
+  color: #3498db;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.terms-section a:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
+
+.last-updated {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+  color: #7f8c8d;
+  font-style: italic;
+  font-size: 0.95rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .terms-header {
+    padding: 40px 0 30px;
+  }
+  
+  .terms-header h1 {
+    font-size: 2rem;
+  }
+  
+  .terms-section {
+    padding: 25px 20px;
+  }
+  
+  .terms-section h2 {
+    font-size: 1.3rem;
+  }
+  
+  .terms-content {
+    padding: 0 10px;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .terms-page {
+    background: white;
+    padding: 0;
+  }
+  
+  .terms-header {
+    background: white !important;
+    color: #333 !important;
+    padding: 20px 0 !important;
+    margin-bottom: 20px !important;
+    border-bottom: 2px solid #eee;
+  }
+  
+  .terms-section {
+    box-shadow: none !important;
+    border: 1px solid #eee;
+    page-break-inside: avoid;
+  }
+  
+  a {
+    text-decoration: none !important;
+  }
+}
