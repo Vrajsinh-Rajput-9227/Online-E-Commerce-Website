@@ -1,6 +1,7 @@
 // In Home.js
 import React, { useState, useEffect } from 'react';
 import Carousel from '../component/Carousel';
+import FeatureCards from '../component/FeatureCards';
 import ProductList from '../component/ProductList';
 import CategorySection from '../component/CategorySection';
 import RandomBanner from '../component/RandomBanner';
@@ -41,6 +42,7 @@ function Home() {
   return (
     <div className="home">
       <Carousel />
+      <FeatureCards />
       
       <div className="container">
         <CategorySection 
